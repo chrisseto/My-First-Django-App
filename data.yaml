@@ -1,0 +1,12 @@
+- model: myblog.post
+  pk: 1
+  fields:
+    author: Chris Seto
+    title: Why are manhole covers round?
+    content: It's because the holes are round!
+- model: myblog.post
+  pk: 2
+  fields:
+    author: Lauren Barker
+    title: What is the hardest challenge you've ever faced?
+    content:  I'd have to say, answering that question.
