@@ -1,6 +1,6 @@
 import json
 
-from django.http import HttpResponse, HttpResponseBadRequest
+from django.http import HttpResponse, HttpResponseBadRequest, JsonResponse
 from django.shortcuts import get_object_or_404
 from django.core import serializers
 from django.db.models import F  # http://stackoverflow.com/questions/447117/django-increment-blog-entry-view-count-by-one-is-this-efficient
@@ -24,3 +24,7 @@ def getAPost(request, post_number):
     post = get_object_or_404(Post, id=post_number)
 
     return HttpResponse(json.dumps(model_to_dict(post)))
+
+
+def ElasticSearchView(request):
+    return JsonResponse({'data': 'ElasticSearch placeholder.'})
