@@ -5,4 +5,4 @@ class Post(models.Model):
     author = models.TextField()
     title = models.TextField()
     content = models.TextField()
-    views = models.IntegerField()
+    views = models.IntegerField(default=0)
