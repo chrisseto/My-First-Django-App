@@ -5,7 +5,4 @@ class Post(models.Model):
     author = models.TextField()
     title = models.TextField()
     content = models.TextField()
-
-
-class PostView(models.Model):
-    forWhatPost = models.IntegerField()
+    views = models.IntegerField()
