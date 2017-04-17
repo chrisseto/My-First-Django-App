@@ -1,0 +1,17 @@
+<p>Here are some of my posts</p>
+<p>Or you can search them {{link-to 'here' 'search'}}</p>
+
+{{#each model as |post|}}
+
+  <div class="row">
+    <div class="column">
+      <h4>{{post.title}}</h4>
+      <blockquote>
+        <p><em>{{post.content}}</em></p>
+      </blockquote>
+
+      <h5>-<i>{{post.author}}</i></h5>
+    </div>
+  </div>
+
+{{/each}}
